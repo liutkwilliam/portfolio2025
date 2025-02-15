@@ -22,3 +22,7 @@ At the moment, using a Hugo Theme - [PaperMod](https://adityatelange.github.io/h
 # Usage
 
 You may use this repository as a starting point. Please do not reuse, republish any content I wrote as your own work without my authorisation.
+
+# Acknowledgement and credits
+
+This repository contains original code from the Hugo Theme - [PaperMod](https://adityatelange.github.io/hugo-PaperMod/) for the website layouts and template.

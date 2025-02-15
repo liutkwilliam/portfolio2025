@@ -1,0 +1,22 @@
+# Hugo Generated Files
+/public/            
+/resources/         
+/hugo_stats.json    
+
+# Temporary Files
+*.log               
+.DS_Store           
+Thumbs.db           
+
+# Hugo Modules & Dependencies
+/go.mod             
+/go.sum             
+
+# Node.js (if using npm for assets like Tailwind)
+node_modules/       
+package-lock.json   
+yarn.lock           
+
+# .env Files (if you use environment variables)
+.env
+.env.local

@@ -1,0 +1,38 @@
+baseURL: ""
+languageCode: en-us
+title: William Liu Portfolio
+theme: ["PaperMod"]
+
+params:
+  homeInfoParams:
+    Title: "G'Day / Hello"
+    Content: "Welcome to my blog powered by Hugo, a static site generator. This site is built for practising."
+  socialIcons:
+    - name: instagram
+      url: "https://www.instagram.com/liutk.william"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/liutkwilliam/"
+    - name: github
+      url: "https://github.com/liutkwilliam"
+  cover:
+    linkFullImages: true
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+    
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
