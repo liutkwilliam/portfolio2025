@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<div class="">
+  <div class="fullPage">
+    <div class="full-cover-container">
+      {{ with .Params.cover }}
+            <img src="{{ . }}" alt="homepage cover photo" style="width: 150px;">
+      {{ end }}
+      <div class="homepage-overlay">
+        <div>
+          <h1 class="text-primary">{{ .Title }}</h2>
+          <p>{{ .Date }}</p>           
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xl">
+    <section id="section-begin">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <p>{{ .Content }}</p>
+        </div>
+      </div>
+    </section>
+    {{ if .Params.images }}
+      {{ partial "gallery.html" . }}
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

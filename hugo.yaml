@@ -1,12 +1,17 @@
 baseURL: ""
 languageCode: en-us
-title: William Liu Portfolio
+title: William Liu
 theme: ["PaperMod"]
 
 params:
+  mainSections:
+    - posts
+    - projects
   homeInfoParams:
     Title: "G'Day / Hello"
     Content: "Welcome to my blog powered by Hugo, a static site generator. This site is built for practising."
+  label:
+    icon: img/logo-icon-colour.svg
   socialIcons:
     - name: instagram
       url: "https://www.instagram.com/liutk.william"
@@ -16,14 +21,20 @@ params:
       url: "https://github.com/liutkwilliam"
   cover:
     linkFullImages: true
-  ShowBreadCrumbs: true
+  # ShowBreadCrumbs: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
-    
+
+outputs:
+  section:
+    - HTML    
 
 menu:
   main:
+    - identifier: projects
+      name: Projects
+      url: /projects/
     - identifier: categories
       name: Categories
       url: /categories/
